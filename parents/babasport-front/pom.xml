@@ -23,5 +23,22 @@
   </dependencies>
   <build>
     <finalName>babasport-front</finalName>
+    <plugins>
+  		<plugin>
+  			<groupId>org.apache.tomcat.maven</groupId>
+  			<artifactId>tomcat7-maven-plugin</artifactId>
+  			<version>2.2</version>
+  			<configuration>
+  				<!-- 请求路径  Tomcat -->
+  				<url>http://121.201.52.225:9000/manager/text</url>
+  				<!-- 用户名 -->
+  				<username>song</username>
+  				<!-- 密码 -->
+  				<password>song</password>
+  				<!-- 项目 名称 -->
+  				<path>/</path>
+  			</configuration>
+  		</plugin>
+  	</plugins>
   </build>
 </project>
